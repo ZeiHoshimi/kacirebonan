@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"integrity="sha512-Fo3rlalYj/G/X9L/9+FzBwX6u3h9a+o+W/o6Vz8q2t5g2S3t4j4o9n4y9z7f1e2i3p4i5n6f7e8a9d0+c/A=="crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Lora:ital,wght@1,700&display=swap"rel="stylesheet">
+
+    <title>Kacirebonan</title>
+</head>
+
+<body>
+    <div class="intro-screen">
+        <div class="gate">
+            <div class="left-wing"></div>
+            <div class="right-wing"></div>
+            <div class="particles"></div>
+            <div class="gate-light"></div>
+            <h1 class="welcome-text">Welcome to Cirebon</h1>
+        </div>
+    </div>
+
+    <main>
+        <section class="hero" id="beranda">
+            <img src="background.jpg" alt="Gerbang Keraton Cirebon" class="hero-bg">
+            <div class="hero-overlay">
+                <div class="hero-content hidden">
+                    <h1 class="hero-title">Welcome to Cirebon</h1>
+                    <p class="hero-desc">Gerbang menuju warisan budaya sakral yang hidup di tengah modernitas</p>
+                    <button class="hero-btn" onclick="window.location.href='#sejarah'">Jelajahi Sekarang</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="sejarah">
+            <div class="timeline-layout">
+                <div class="left-wheel">
+                    <div class="highlight"></div>
+                    <button id="btnUp"
+                        style="position: absolute; top: 10px; z-index: 3; background: none; border: none; color: var(--accent); font-size: 1.2rem; cursor: pointer;">▲</button>
+                    <div class="year-list" id="yearList">
+                        <div style="height: 200px;"></div>
+                        <div class="year-item selected" data-year="1400">1400-an</div>
+                        <div class="year-item" data-year="1500">1500-an</div>
+                        <div class="year-item" data-year="1600">1600-an</div>
+                        <div class="year-item" data-year="1700">1700-an</div>
+                        <div class="year-item" data-year="1800">1800-an</div>
+                        <div class="year-item" data-year="1900">1900-an</div>
+                        <div class="year-item" data-year="2000">2000-an</div>
+                        <div style="height: 200px;"></div>
+                    </div>
+                    <button id="btnDown"
+                        style="position: absolute; bottom: 10px; z-index: 3; background: none; border: none; color: var(--accent); font-size: 1.2rem; cursor: pointer;">▼</button>
+                </div>
+
+                <div class="right-content" id="contentArea">
+                    
+                    <div class="year-content active" id="content1400">
+                        <h2 class="section-title" id="dynamicTitle">1400-an — Awal Mula Cirebon</h2>
+                        <div class="content-grid">
+                            <div class="image-side">
+                                <img src="img/images1.jpg" alt="Ilustrasi Pesisir Cirebon" />
+                                <p class="img-caption">Ilustrasi pesisir Cirebon di awal abad ke-15</p>
+                            </div>
+                            <div class="text-side">
+                                <div class="intro">
+                                    <p>Abad ke-15 merupakan periode krusial bagi Cirebon. Di tengah pergeseran kekuasaan
+                                        dari kerajaan-kerajaan Hindu-Buddha menuju kerajaan Islam, wilayah kecil bernama
+                                        Muara Jati di pantai utara Jawa Barat mulai tumbuh menjadi pusat budaya dan
+                                        agama yang akan dikenang sebagai Kesultanan Cirebon.</p>
+                                </div>
+                                <div class="timeline-section">
+                                    <h3>📌 Peristiwa Penting</h3>
+                                    <ul>
+                                        <li><strong>1420–1440:</strong> Awal Mula Islam Masuk</li>
+                                        <li><strong>1445:</strong> Ki Gedeng Tapa mendirikan pemukiman dan pelabuhan di
+                                            Muara Jati sebagai cikal bakal Kota Cirebon.</li>
+                                        <li><strong>1470:</strong> Sunan Gunung Jati datang ke Cirebon dan mulai
+                                            menyebarkan Islam melalui pendekatan budaya dan dakwah yang damai.</li>
+                                        <li><strong>Akhir 1400-an:</strong> Terbentuknya komunitas Muslim lokal,
+                                            pembangunan masjid kecil, serta munculnya budaya baru yang memadukan nilai
+                                            Islam dan tradisi pesisir.</li>
+                                    </ul>
+                                </div>
+                                <div class="keywords">
+                                    <h4>Tokoh penting</h4>
+                                    <div class="tags">
+                                        <span>Muara Jati</span>
+                                        <span>Ki Gedeng Tapa</span>
+                                        <span>Penyebaran Islam</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="summary-box">
+                            <h4>Rangkuman</h4>
+                            <p>Docang adalah makanan khas Cirebon yang terbuat dari campuran lontong, daun singkong,
+                                tauge, kerupuk, dan disiram kuah oncom merah yang pedas. Uniknya, docang disajikan
+                                dengan siraman parutan kelapa sangrai yang gurih, menciptakan perpaduan rasa manis,
+                                pedas, dan gurih yang kaya.</p>
+                        </div>
+                    </div>
+
+                    <div class="year-content" id="content1500">
+                        <h2 class="section-title">1500-an — Kejayaan Kesultanan Cirebon</h2>
+                        <div class="content-grid">
+                            <div class="image-side">
+                                <img src="img/images1.jpg" alt="Kesultanan Cirebon Abad 16" />
+                                <p class="img-caption">Ilustrasi Kesultanan Cirebon pada puncak kejayaannya</p>
+                            </div>
+                            <div class="text-side">
+                                <div class="intro">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio doloribus
+                                        voluptatum totam iure blanditiis aliquam magni, fuga facere harum, libero
+                                        pariatur recusandae quas,
+                                        excepturi ipsa similique perspiciatis sit voluptates rerum. Lorem ipsum dolor
+                                        sit amet, consectetur
+                                        adipisicing elit. Atque architecto esse necessitatibus possimus ea omnis, neque
+                                        doloribus ex velit,
+                                        eius beatae dolorem non aspernatur dolorum fugit fuga, at expedita! Accusantium.
+                                    </p>
+                                </div>
+                                <div class="tirai timeline-section">
+                                    <h3>📌 Peristiwa Penting</h3>
+                                    <ul>
+                                        <li><strong>1510:</strong> Pengukuhan Kesultanan Cirebon sebagai kerajaan Islam
+                                            independen.</li>
+                                        <li><strong>1527:</strong> Sunan Gunung Jati berperan dalam penaklukan Sunda
+                                            Kelapa bersama Demak.</li>
+                                        <li><strong>1552:</strong> Peningkatan hubungan diplomatik dan perdagangan
+                                            dengan kerajaan luar.</li>
+                                    </ul>
+                                </div>
+                                <div class="keywords">
+                                    <h4>Kata Kunci</h4>
+                                    <div class="tags">
+                                        <span>Kesultanan Cirebon</span>
+                                        <span>Sunan Gunung Jati</span>
+                                        <span>Islam Nusantara</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="summary-box">
+                            <h4> Rangkuman</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores explicabo saepe
+                                fugit voluptate, doloremque architecto hic non illo incidunt accusantium qui optio est
+                                ipsum commodi
+                                vitae iste nihil repudiandae suscipit? Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Eligendi
+                                illo illum cumque tenetur soluta placeat repellat facere corrupti error, tempora porro
+                                nemo odio
+                                necessitatibus natus voluptates, praesentium reprehenderit alias in. Lorem ipsum dolor,
+                                sit amet
+                                consectetur adipisicing elit. Fugiat, suscipit? Tempore non aperiam quisquam cumque, hic
+                                obcaecati! Minus
+                                praesentium voluptates distinctio unde, laborum at mollitia quae consequatur
+                                necessitatibus iusto eveniet?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis aut quo voluptate dicta
+                                dignissimos. Fugiat
+                                et aut maxime, ex ipsum nulla ullam accusantium dicta esse nesciunt veritatis molestiae
+                                eaque recusandae?</p>
+                        </div>
+                    </div>
+
+                    <div class="year-content" id="content1600">
+                        <h2 class="section-title">1600-an — Kontak Awal dengan Dunia Barat</h2>
+                        <div class="content-grid">
+                            <div class="image-side">
+                                <img src="img/images1.jpg" alt="Kontak Barat" />
+                                <p class="img-caption">Ilustrasi pedagang Eropa di Cirebon</p>
+                            </div>
+                            <div class="text-side">
+                                <div class="intro">
+                                    <p>Abad ke-17 menandai dimulainya interaksi yang lebih intens antara Kesultanan
+                                        Cirebon dengan kekuatan-kekuatan Barat, khususnya VOC (Vereenigde Oostindische
+                                        Compagnie) atau Perusahaan Hindia Timur Belanda. Ini membawa perubahan
+                                        signifikan dalam dinamika politik dan ekonomi Cirebon.</p>
+                                </div>
+                                <div class="timeline-section">
+                                    <h3>📌 Peristiwa Penting</h3>
+                                    <ul>
+                                        <li><strong>Awal 1600-an:</strong> Kedatangan VOC di Nusantara dan mulai
+                                            memperluas pengaruhnya di pesisir Jawa.</li>
+                                        <li><strong>1620-an:</strong> VOC mulai menjalin hubungan dagang dengan Cirebon,
+                                            terutama untuk komoditas seperti beras dan rempah-rempah.</li>
+                                        <li><strong>1677:</strong> Perjanjian antara Amangkurat II dari Mataram dengan
+                                            VOC yang berdampak pada status Cirebon, menempatkannya di bawah pengaruh
+                                            tidak langsung VOC.</li>
+                                        <li><strong>Akhir 1600-an:</strong> Munculnya perselisihan internal di
+                                            Kesultanan Cirebon yang dimanfaatkan oleh VOC untuk memperkuat posisinya.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="keywords">
+                                    <h4>Kata Kunci</h4>
+                                    <div class="tags">
+                                        <span>VOC</span>
+                                        <span>Perdagangan</span>
+                                        <span>Mataram</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="summary-box">
+                            <h4>Rangkuman</h4>
+                            <p>Abad ke-17 adalah periode transisi bagi Cirebon, dari kemandirian penuh menjadi wilayah
+                                yang mulai merasakan dampak dominasi kolonial. Konflik internal dan intervensi asing
+                                menjadi tantangan baru bagi Kesultanan Cirebon.</p>
+                        </div>
+                    </div>
+                    <div class="year-content" id="content1700">
+                        <h2 class="section-title">1700-an — Konflik dan Perpecahan</h2>
+                        <div class="content-grid">
+                            <div class="image-side">
+                                <img src="img/images1.jpg" alt="Perpecahan Keraton" />
+                                <p class="img-caption">Ilustrasi konflik di dalam keraton Cirebon</p>
+                            </div>
+                            <div class="text-side">
+                                <div class="intro">
+                                    <p>Abad ke-18 ditandai dengan semakin melemahnya Kesultanan Cirebon akibat
+                                        perpecahan internal dan intervensi VOC yang semakin dalam. Wilayah ini terbagi
+                                        menjadi beberapa keraton yang saling bersaing, melemahkan kekuatan politik
+                                        Cirebon secara keseluruhan.</p>
+                                </div>
+                                <div class="timeline-section">
+                                    <h3>📌 Peristiwa Penting</h3>
+                                    <ul>
+                                        <li><strong>1700-an Awal:</strong> Pembagian Kesultanan Cirebon menjadi tiga
+                                            keraton utama: Kasepuhan, Kanoman, dan Kacirebonan.</li>
+                                        <li><strong>Sepanjang Abad ke-18:</strong> Persaingan politik antar keraton yang
+                                            dimanfaatkan VOC untuk mengontrol wilayah.</li>
+                                        <li><strong>1740-an:</strong> VOC menguasai penuh pelabuhan Cirebon dan
+                                            mengontrol jalur perdagangan penting.</li>
+                                        <li><strong>Akhir 1700-an:</strong> Fungsi keraton beralih lebih kepada aspek
+                                            budaya dan keagamaan, sementara kekuasaan politik murni dipegang VOC.</li>
+                                    </ul>
+                                </div>
+                                <div class="keywords">
+                                    <h4>Kata Kunci</h4>
+                                    <div class="tags">
+                                        <span>Perpecahan Keraton</span>
+                                        <span>VOC</span>
+                                        <span>Pengaruh Kolonial</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="summary-box">
+                            <h4>Rangkuman</h4>
+                            <p>Abad ke-18 adalah periode suram bagi Kesultanan Cirebon dengan adanya perpecahan internal
+                                yang masif dan dominasi VOC. Cirebon kehilangan sebagian besar otonomi politiknya dan
+                                menjadi wilayah di bawah kendali kolonial Belanda.</p>
+                        </div>
+                    </div>
+                    <div class="year-content" id="content1800">
+                        <h2 class="section-title">1800-an — Dominasi Belanda & Keraton</h2>
+                        <div class="content-grid">
+                            <div class="image-side">
+                                <img src="img/images1.jpg" alt="Pemerintahan Kolonial" />
+                                <p class="img-caption">Ilustrasi kantor pemerintahan Belanda di Cirebon</p>
+                            </div>
+                            <div class="text-side">
+                                <div class="intro">
+                                    <p>Pada abad ke-19, Cirebon sepenuhnya berada di bawah kendali pemerintahan kolonial
+                                        Belanda. Meskipun keraton-keraton masih ada, fungsi mereka hanya sebatas simbol
+                                        budaya dan keagamaan, tanpa kekuatan politik yang berarti.</p>
+                                </div>
+                                <div class="timeline-section">
+                                    <h3>📌 Peristiwa Penting</h3>
+                                    <ul>
+                                        <li><strong>1808:</strong> Penerapan sistem pemerintahan kolonial yang lebih
+                                            terstruktur oleh Daendels.</li>
+                                        <li><strong>1830-an:</strong> Pemberlakuan Sistem Tanam Paksa (Cultuurstelsel)
+                                            yang sangat memengaruhi kehidupan ekonomi rakyat Cirebon.</li>
+                                        <li><strong>Pertengahan Abad ke-19:</strong> Pembangunan infrastruktur oleh
+                                            Belanda, seperti jalan raya dan jalur kereta api, untuk mendukung
+                                            kepentingan ekonomi kolonial.</li>
+                                        <li><strong>Akhir 1800-an:</strong> Keraton-keraton Cirebon menjadi pusat
+                                            pelestarian budaya dan tradisi, tetapi kehilangan peran politiknya secara
+                                            total.</li>
+                                    </ul>
+                                </div>
+                                <div class="keywords">
+                                    <h4>Kata Kunci</h4>
+                                    <div class="tags">
+                                        <span>Kolonial Belanda</span>
+                                        <span>Tanam Paksa</span>
+                                        <span>Infrastruktur</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="summary-box">
+                            <h4>Rangkuman</h4>
+                            <p>Abad ke-19 adalah era dominasi penuh Belanda di Cirebon, yang membawa perubahan drastis
+                                dalam ekonomi dan sosial masyarakat melalui kebijakan-kebijakan kolonial. Keraton
+                                Cirebon berubah menjadi penjaga budaya di tengah kekuasaan asing.</p>
+                        </div>
+                    </div>
+                    <div class="year-content" id="content1900">
+                        <h2 class="section-title">1900-an — Pergerakan & Kemerdekaan</h2>
+                        <div class="content-grid">
+                            <div class="image-side">
+                                <img src="img/images1.jpg" alt="Pergerakan Nasional" />
+                                <p class="img-caption">Ilustrasi tokoh pergerakan di Cirebon</p>
+                            </div>
+                            <div class="text-side">
+                                <div class="intro">
+                                    <p>Abad ke-20 menjadi saksi bangkitnya semangat nasionalisme dan perjuangan
+                                        kemerdekaan di Cirebon, seperti di daerah lain di Indonesia. Rakyat Cirebon
+                                        turut serta dalam pergerakan menuju Indonesia merdeka, menghadapi berbagai
+                                        tantangan dari penjajahan hingga masa revolusi.</p>
+                                </div>
+                                <div class="timeline-section">
+                                    <h3>📌 Peristiwa Penting</h3>
+                                    <ul>
+                                        <li><strong>Awal 1900-an:</strong> Munculnya organisasi pergerakan nasional di
+                                            Cirebon, seperti Sarekat Islam dan Indische Partij.</li>
+                                        <li><strong>Masa Pendudukan Jepang (1942-1945):</strong> Cirebon mengalami
+                                            dampak pendudukan Jepang dan kekejaman VOC.</li>
+                                        <li><strong>17 Agustus 1945:</strong> Proklamasi Kemerdekaan Indonesia disambut
+                                            antusias di Cirebon, memicu gejolak revolusi.</li>
+                                        <li><strong>Periode Revolusi Fisik (1945-1949):</strong> Cirebon menjadi salah
+                                            satu medan pertempuran sengit antara pejuang kemerdekaan dan pasukan
+                                            Belanda.</li>
+                                        <li><strong>Pasca-Kemerdekaan:</strong> Cirebon menjadi bagian dari Republik
+                                            Indonesia dan mulai membangun kembali daerahnya.</li>
+                                    </ul>
+                                </div>
+                                <div class="keywords">
+                                    <h4>Kata Kunci</h4>
+                                    <div class="tags">
+                                        <span>Nasionalisme</span>
+                                        <span>Revolusi Fisik</span>
+                                        <span>Kemerdekaan</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="summary-box">
+                            <h4>Rangkuman</h4>
+                            <p>Abad ke-20 adalah periode heroik bagi Cirebon, di mana semangat pergerakan nasional dan
+                                perjuangan kemerdekaan berkobar. Cirebon turut serta dalam sejarah panjang bangsa
+                                Indonesia menuju kemerdekaan dan pembangunan pasca-revolusi.</p>
+                        </div>
+                    </div>
+                    <div class="year-content" id="content2000">
+                        <h2 class="section-title">2000-an — Cirebon Modern dan Digital</h2>
+                        <div class="content-grid">
+                            <div class="image-side">
+                                <img src="img/images1.jpg" alt="Cirebon Modern" />
+                                <p class="img-caption">Pemandangan kota Cirebon modern</p>
+                            </div>
+                            <div class="text-side">
+                                <div class="intro">
+                                    <p>Memasuki milenium baru, Cirebon bertransformasi menjadi kota modern yang terus
+                                        berkembang, namun tetap mempertahankan warisan budaya yang kaya. Perkembangan
+                                        teknologi dan digitalisasi membawa banyak perubahan positif, membuka peluang
+                                        baru bagi masyarakat Cirebon.</p>
+                                </div>
+                                <div class="timeline-section">
+                                    <h3>📌 Peristiwa Penting</h3>
+                                    <ul>
+                                        <li><strong>Awal 2000-an:</strong> Pembangunan infrastruktur modern dan
+                                            pertumbuhan ekonomi yang pesat di Cirebon.</li>
+                                        <li><strong>2010-an:</strong> Peningkatan pariwisata berkat promosi budaya dan
+                                            kuliner khas Cirebon.</li>
+                                        <li><strong>Pertengahan 2010-an:</strong> Inisiatif smart city dan adopsi
+                                            teknologi digital dalam pelayanan publik dan kehidupan sehari-hari.</li>
+                                        <li><strong>Sekarang:</strong> Cirebon menjadi pusat regional yang penting di
+                                            Jawa Barat bagian timur, dengan fokus pada pengembangan ekonomi kreatif dan
+                                            pelestarian budaya.</li>
+                                    </ul>
+                                </div>
+                                <div class="keywords">
+                                    <h4>Kata Kunci</h4>
+                                    <div class="tags">
+                                        <span>Smart City</span>
+                                        <span>Pariwisata</span>
+                                        <span>Ekonomi Kreatif</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="summary-box">
+                            <h4>Rangkuman</h4>
+                            <p>Abad ke-21 adalah era Cirebon yang modern dan adaptif, merangkul teknologi dan inovasi
+                                tanpa melupakan akar budayanya. Kota ini terus berkembang menjadi pusat kegiatan
+                                ekonomi, pariwisata, dan budaya yang dinamis di Jawa Barat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="seni" class="content-wrapper">
+            <div id="seni-grid-view">
+                <h2 class="main-heading">Seni & Budaya Cirebon</h2>
+                <div class="asymmetric-grid">
+                    <div id="megamendung" class="item-card" onclick="openDetailSeni('batik-megamendung')">
+                        <img src="img/batik.jpg" alt="Batik Megamendung">
+                    </div>
+                    <div id="taritopeng" class="item-card" onclick="openDetailSeni('tari-topeng')">
+                        <img src="img/tari-topeng.jpg" alt="Tari Topeng">
+                    </div>
+                    <div id="lukisankaca" class="item-card" onclick="openDetailSeni('lukisan-kaca')">
+                        <img src="img/lukis.jpg" alt="Lukisan Kaca">
+                    </div>
+                    <div id="sintren" class="item-card" onclick="openDetailSeni('tari-sintren')">
+                        <img src="img/tariSintren.jpg" alt="Sintren">
+                    </div>
+                    <div id="gamelan" class="item-card" onclick="openDetailSeni('gamelan-sekaten')">
+                        <img src="img/gamelan.jpg" alt="Gamelan Sekaten">
+                    </div>
+                    <div id="wayangkulit" class="item-card" onclick="openDetailSeni('wayang-kulit')">
+                        <img src="img/wayang.jpg" alt="Wayang Kulit">
+                    </div>
+                    <div id="jaranLumping" class="item-card" onclick="openDetailSeni('jaran-lumping')">
+                        <img src="img/jaranLumping.jpg" alt="Jaran Lumping">
+                    </div>
+                </div>
+            </div>
+
+            <div id="seni-detail-view" style="display: none;">
+                <div class="detail-layout-grid">
+                    <div class="detail-main-content">
+                        <div class="detail-section" id="batik-megamendung">
+                            <h2 class="detail-title">Batik Megamendung</h2>
+                            <img src="img/batik.jpg" alt="Batik Megamendung" class="detail-img" />
+                            <p class="detail-desc">Batik Megamendung adalah karya seni batik yang identik dan menjadi
+                                ikon Cirebon. Motifnya yang menyerupai awan melambangkan kesuburan dan pembawa hujan
+                                yang memberi kehidupan. Gradasi warna yang khas, biasanya dari biru muda hingga biru
+                                tua, menambah keindahan dan makna filosofisnya.</p>
+                            <button class="back-btn" onclick="goBackSeni()">← Kembali ke Galeri</button>
+                        </div>
+                        <div class="detail-section" id="tari-topeng">
+                            <h2 class="detail-title">Tari Topeng</h2>
+                            <img src="img/tari-topeng.jpg" alt="Tari Topeng" class="detail-img" />
+                            <p class="detail-desc">Tari Topeng Cirebon adalah salah satu tarian tradisional paling
+                                sakral. Setiap topeng yang dikenakan—Panji, Samba, Rumyang, Tumenggung, dan
+                                Kelana—mewakili tahapan dan sifat yang berbeda dalam kehidupan manusia, dari masa
+                                kanak-kanan hingga dewasa yang penuh nafsu angkara.</p>
+                            <button class="back-btn" onclick="goBackSeni()">← Kembali ke Galeri</button>
+                        </div>
+                        <div class="detail-section" id="lukisan-kaca">
+                            <h2 class="detail-title">Lukisan Kaca</h2>
+                            <img src="img/lukis.jpg" alt="Lukisan Kaca" class="detail-img" />
+                            <p class="detail-desc">Ini adalah seni lukis yang unik karena menggunakan kaca sebagai media
+                                dan teknik melukisnya dilakukan secara terbalik. Tema yang diangkat seringkali berupa
+                                wayang, kaligrafi, atau cerita rakyat. Seni ini membutuhkan ketelitian dan keahlian
+                                tingkat tinggi dari para senimannya.</p>
+                            <button class="back-btn" onclick="goBackSeni()">← Kembali ke Galeri</button>
+                        </div>
+                        <div class="detail-section" id="tari-sintren">
+                            <h2 class="detail-title">Sintren</h2>
+                            <img src="img/tariSintren.jpg" alt="Sintren" class="detail-img" />
+                            <p class="detail-desc">Sintren adalah kesenian tari tradisional yang mengandung unsur magis.
+                                Penari utama, biasanya seorang gadis, dimasukkan ke dalam kurungan ayam dan dipercaya
+                                dirasuki oleh roh bidadari untuk menari. Kesenian ini penuh misteri dan menjadi daya
+                                tarik budaya yang unik.</p>
+                            <button class="back-btn" onclick="goBackSeni()">← Kembali ke Galeri</button>
+                        </div>
+                        <div class="detail-section" id="gamelan-sekaten">
+                            <h2 class="detail-title">Gamelan Sekaten</h2>
+                            <img src="img/gamelan.jpg" alt="Gamelan Sekaten" class="detail-img" />
+                            <p class="detail-desc">Gamelan Sekaten adalah seperangkat alat musik gamelan pusaka yang
+                                hanya dibunyikan setahun sekali, yaitu pada perayaan Idul Fitri dan Idul Adha di Keraton
+                                Kasepuhan. Suaranya yang khas dan agung menjadi bagian dari ritual penting keraton yang
+                                menarik banyak pengunjung.</p>
+                            <button class="back-btn" onclick="goBackSeni()">← Kembali ke Galeri</button>
+                        </div>
+                        <div class="detail-section" id="wayang-kulit">
+                            <h2 class="detail-title">Wayang Kulit Cirebon</h2>
+                            <img src="img/wayang.jpg" alt="Wayang Kulit" class="detail-img" />
+                            <p class="detail-desc">Wayang Kulit gaya Cirebon memiliki ciri khasnya sendiri yang disebut
+                                Wayang Cepak. Berbeda dari gaya Jawa tengah, Wayang Cepak seringkali mengangkat
+                                cerita-cerita lokal, babad Cirebon, dan syiar Islam. Bentuknya pun unik, dengan detail
+                                yang lebih sederhana namun tetap ekspresif.</p>
+                            <button class="back-btn" onclick="goBackSeni()">← Kembali ke Galeri</button>
+                        </div>
+                        <div class="detail-section" id="jaran-lumping">
+                            <h2 class="detail-title">Jaran Lumping</h2>
+                            <img src="img/jaranLumping.jpg" alt="Jaran Lumping" class="detail-img" />
+                            <p class="detail-desc">Jaran Lumping atau Kuda Lumping adalah tarian tradisional yang
+                                menampilkan sekelompok prajurit berkuda. Kuda yang digunakan terbuat dari anyaman bambu
+                                dan kulit. Tarian ini seringkali diiringi musik gamelan yang energik dan tak jarang
+                                menampilkan adegan kesurupan (trance) yang menjadi daya tarik utamanya.</p>
+                            <button class="back-btn" onclick="goBackSeni()">← Kembali ke Galeri</button>
+                        </div>
+                    </div>
+                    <div class="detail-sidebar">
+                        <h3 class="sidebar-title">Pilihan Lainnya</h3>
+                        <div class="sidebar-nav-list">
+                            <div class="sidebar-item" id="sidebar-batik-megamendung"
+                                onclick="openDetailSeni('batik-megamendung')">
+                                <img src="img/batik.jpg" alt="Thumbnail Batik Megamendung">
+                                <span>Batik Megamendung</span>
+                            </div>
+                            <div class="sidebar-item" id="sidebar-tari-topeng" onclick="openDetailSeni('tari-topeng')">
+                                <img src="img/tari-topeng.jpg" alt="Thumbnail Tari Topeng">
+                                <span>Tari Topeng</span>
+                            </div>
+                            <div class="sidebar-item" id="sidebar-lukisan-kaca"
+                                onclick="openDetailSeni('lukisan-kaca')">
+                                <img src="img/lukis.jpg" alt="Thumbnail Lukisan Kaca">
+                                <span>Lukisan Kaca</span>
+                            </div>
+                            <div class="sidebar-item" id="sidebar-sintren" onclick="openDetailSeni('tari-sintren')">
+                                <img src="img/tariSintren.jpg" alt="Thumbnail Sintren">
+                                <span>Sintren</span>
+                            </div>
+                            <div class="sidebar-item" id="sidebar-gamelan-sekaten"
+                                onclick="openDetailSeni('gamelan-sekaten')">
+                                <img src="img/gamelan.jpg" alt="Thumbnail Gamelan Sekaten">
+                                <span>Gamelan Sekaten</span>
+                            </div>
+                            <div class="sidebar-item" id="sidebar-wayang-kulit"
+                                onclick="openDetailSeni('wayang-kulit')">
+                                <img src="img/wayang.jpg" alt="Thumbnail Wayang Kulit">
+                                <span>Wayang Kulit</span>
+                            </div>
+                            <div class="sidebar-item" id="sidebar-jaran-lumping"
+                                onclick="openDetailSeni('jaran-lumping')">
+                                <img src="img/jaranLumping.jpg" alt="Thumbnail Jaran Lumping">
+                                <span>Jaran Lumping</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pariwisata" class="tourism-section-wrapper">
+            <div class="container">
+                <header class="tourism-header">
+                    <h1>Jelajah Pesona Kacirebonan</h1>
+                    <p>Panduan Wisata Hits & Bersejarah di Kota Udang!</p>
+                </header>
+
+                <section class="tourism-category">
+                    <h2><i class="fas fa-landmark"></i>Wisata Sejarah & Budaya</h2>
+                    <div class="grid-container">
+                        <article class="card">
+                            <img src="img/keraton.jpg" alt="Gambar Keraton Kasepuhan">
+                            <div class="card-body">
+                                <div class="card-content">
+                                    <h3><i class="fas fa-building-columns"></i>Keraton Kasepuhan</h3>
+                                    <p>Keraton paling tua ning Cirebon, tempaté Sultan Sepuh. Ning kene bisa deleng
+                                        museum isine benda-benda pusaka keraton, termasuk kereta kencana Singa Barong
+                                        sing legendaris.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <img src="img/sunyaragi.jpg" alt="Gambar Gua Sunyaragi">
+                            <div class="card-body">
+                                <div class="card-content">
+                                    <h3><i class="fas fa-monument"></i>Gua Sunyaragi</h3>
+                                    <p>Bentuké unik pisan, kaya istana sing digawe sing watu karang. Dulu, tempat iki
+                                        digunakaken kanggo meditasi. Spot fotone akeh lan Instagramable banget!</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <img src="img/makamSunanGunungJati.jpg" alt="Gambar Makam Sunan Gunung Jati">
+                            <div class="card-body">
+                                <div class="card-content">
+                                    <h3><i class="fas fa-mosque"></i>Makam Sunan Gunung Jati</h3>
+                                    <p>Salah siji Wali Songo sing nyebarna Islam ning tanah Jawa. Tempat iki dadi pusat
+                                        wisata religi sing rame pisan ditekani peziarah sing seluruh Indonesia.</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="tourism-category">
+                    <h2><i class="fas fa-leaf"></i>Wisata Alam & Santai</h2>
+                    <div class="grid-container">
+                        <article class="card">
+                            <img src="img/bukit.jpg" alt="Gambar Bukit Gronggong">
+                            <div class="card-body">
+                                <div class="card-content">
+                                    <h3><i class="fas fa-mountain-sun"></i>Bukit Gronggong</h3>
+                                    <p>Tempat paling romantis kanggo ndeleng kerlip lampu kota Cirebon sing duwur. Akeh
+                                        kafe karo warung jagung bakar ning sepanjang dalan.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <img src="img/kejawanan.jpg" alt="Gambar Pantai Kejawanan">
+                            <div class="card-body">
+                                <div class="card-content">
+                                    <h3><i class="fas fa-water"></i>Pantai Kejawanan</h3>
+                                    <p>Pengen ngerasakna angin laut? Ning kene tempate. Pantai sederhana sing asik
+                                        kanggo mlaku-mlaku sore, ndeleng srengenge angslup (sunset).</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="tourism-category">
+                    <h2><i class="fas fa-store"></i>Wisata Belanja & Oleh-Oleh</h2>
+                    <div class="grid-container">
+                        <article class="card">
+                            <img src="img/batiktrusmi.jpg" alt="Gambar Kampung Batik Trusmi">
+                            <div class="card-body">
+                                <div class="card-content">
+                                    <h3><i class="fas fa-palette"></i>Kampung Batik Trusmi</h3>
+                                    <p>Durung lengkap dolan ning Cirebon ari durung tuku Batik Mega Mendung. Ning
+                                        Kampung Trusmi, bisa ndeleng langsung proses gawene lan belanja batik.</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <section id="kuliner" class="content-wrapper">
+            <div id="kuliner-grid-view">
+                <h2 class="main-heading">Kuliner Cirebon</h2>
+                <div class="asymmetric-grid">
+                    <div id="docang" class="item-card" onclick="openDetailKuliner('docang-detail')">
+                        <img src="img/docang.jpg" alt="Docang">
+                    </div>
+                    <div id="miekocok" class="item-card" onclick="openDetailKuliner('mie-koclok-detail')">
+                        <img src="img/miekoclok.jpg" alt="Mie Koclok">
+                    </div>
+                    <div id="tahugejrot" class="item-card" onclick="openDetailKuliner('tahu-gejrot-detail')">
+                        <img src="img/tahu.jpg" alt="Tahu Gejrot">
+                    </div>
+                    <div id="nasijamblang" class="item-card" onclick="openDetailKuliner('nasi-jamblang-detail')">
+                        <img src="img/jamblang.jpg" alt="Nasi Jamblang">
+                    </div>
+                    <div id="empalgentong" class="item-card" onclick="openDetailKuliner('empal-gentong-detail')">
+                        <img src="img/empal.jpg" alt="Empal Gentong">
+                    </div>
+                    <div id="nasilengko" class="item-card" onclick="openDetailKuliner('nasi-lengko-detail')">
+                        <img src="img/nasiLengko.jpg" alt="Nasi Lengko">
+                    </div>
+                    <div id="gadogado" class="item-card" onclick="openDetailKuliner('gado-gado-detail')">
+                        <img src="img/gadoGado.jpg" alt="Gado Gado Ayam">
+                    </div>
+                </div>
+            </div>
+
+            <div id="kuliner-detail-view" style="display: none;">
+                <div class="detail-layout-grid">
+                    <div class="detail-main-content">
+                        <div class="detail-section" id="docang-detail">
+                            <h2 class="detail-title">Docang</h2>
+                            <img src="img/docang.jpg" alt="Docang" class="detail-img" />
+                            <p class="detail-desc">Docang adalah makanan khas Cirebon yang terbuat dari campuran
+                                lontong, daun singkong, tauge, kerupuk, dan disiram kuah oncom merah yang pedas.
+                                Uniknya, docang disajikan dengan siraman parutan kelapa sangrai yang gurih, menciptakan
+                                perpaduan rasa manis, pedas, dan gurih yang kaya.</p>
+                            <button class="back-btn" onclick="goBackKuliner()">← Kembali ke Galeri</button>
+                        </div>
+                        <div class="detail-section" id="mie-koclok-detail">
+                            <h2 class="detail-title">Mie Koclok</h2>
+                            <img src="img/miekoclok.jpg" alt="Mie Koclok" class="detail-img" />
+                            <p class="detail-desc">Mie Koclok adalah hidangan mie kuah kental khas Cirebon. Kuahnya yang
+                                terbuat dari kaldu ayam dan santan ini sangat gurih dan creamy. Disajikan dengan suwiran
+                                ayam, tauge, telur rebus, irisan daun bawang, dan taburan bawang goreng, membuat Mie
+                                Koclok menjadi sajian yang hangat dan mengenyangkan.</p>
+                            <button class="back-btn" onclick="goBackKuliner()">← Kembali ke Galeri</button>
+                        </div>
+                        <div class="detail-section" id="tahu-gejrot-detail">
+                            <h2 class="detail-title">Tahu Gejrot</h2>
+                            <img src="img/tahu.jpg" alt="Tahu Gejrot" class="detail-img" />
+                            <p class="detail-desc">Tahu Gejrot adalah jajanan khas Cirebon yang terkenal dengan
+                                kesegaran dan pedasnya. Terdiri dari tahu goreng pong yang dipotong kecil-kecil, disiram
+                                dengan kuah asam manis pedas berbumbu bawang merah, bawang putih, cabai rawit, dan gula
+                                merah. Rasanya yang unik membuat Tahu Gejrot digemari banyak orang.</p>
+                            <button class="back-btn" onclick="goBackKuliner()">← Kembali ke Galeri</button>
+                        </div>
+                        <div class="detail-section" id="nasi-jamblang-detail">
+                            <h2 class="detail-title">Nasi Jamblang</h2>
+                            <img src="img/jamblang.jpg" alt="Nasi Jamblang" class="detail-img" />
+                            <p class="detail-desc">Nasi Jamblang adalah hidangan nasi yang dibungkus daun jati,
+                                memberikan aroma khas. Keistimewaan Nasi Jamblang terletak pada variasi lauk pauknya
+                                yang sangat banyak, seperti paru goreng, sate telur puyuh, sambal goreng, tahu sayur,
+                                cumi hitam, dan masih banyak lagi. Pengunjung bebas memilih lauk sesuai selera.</p>
+                            <button class="back-btn" onclick="goBackKuliner()">← Kembali ke Galeri</button>
+                        </div>
+                        <div class="detail-section" id="empal-gentong-detail">
+                            <h2 class="detail-title">Empal Gentong</h2>
+                            <img src="img/empal.jpg" alt="Empal Gentong" class="detail-img" />
+                            <p class="detail-desc">Empal Gentong adalah sup daging sapi khas Cirebon yang dimasak dalam
+                                gentong tanah liat menggunakan kayu bakar, memberikan aroma dan rasa yang unik. Kuahnya
+                                yang kaya rempah dan santan terasa gurih dan sedikit manis. Disajikan hangat dengan
+                                irisan daging sapi empuk, taburan kucai, dan bawang goreng.</p>
+                            <button class="back-btn" onclick="goBackKuliner()">← Kembali ke Galeri</button>
+                        </div>
+                        <div class="detail-section" id="nasi-lengko-detail">
+                            <h2 class="detail-title">Nasi Lengko</h2>
+                            <img src="img/nasiLengko.jpg" alt="Nasi Lengko" class="detail-img" />
+                            <p class="detail-desc">Nasi Lengko adalah makanan sehat khas Cirebon yang terdiri dari nasi
+                                putih, tauge, mentimun, tahu, tempe goreng, dan disiram saus kacang yang gurih. Ditambah
+                                irisan kerupuk, bawang goreng, dan kucai, Nasi Lengko menjadi pilihan yang ringan namun
+                                mengenyangkan, cocok untuk sarapan atau makan siang.</p>
+                            <button class="back-btn" onclick="goBackKuliner()">← Kembali ke Galeri</button>
+                        </div>
+                        <div class="detail-section" id="gado-gado-detail">
+                            <h2 class="detail-title">Gado-Gado Ayam Cirebon</h2>
+                            <img src="img/gadoGado.jpg" alt="Gado Gado Ayam" class="detail-img" />
+                            <p class="detail-desc">Gado-Gado Ayam Cirebon adalah varian gado-gado lokal yang menonjolkan
+                                penggunaan suwiran ayam goreng sebagai tambahan utama. Campuran sayuran rebus, lontong,
+                                tahu, dan tempe disiram dengan saus kacang kental yang kaya rasa. Ini adalah hidangan
+                                lengkap yang lezat dan bergizi.</p>
+                            <button class="back-btn" onclick="goBackKuliner()">← Kembali ke Galeri</button>
+                        </div>
+                    </div>
+                    <div class="detail-sidebar">
+                        <h3 class="sidebar-title">Pilihan Lainnya</h3>
+                        <div class="sidebar-nav-list">
+                            <div class="sidebar-item" id="sidebar-docang" onclick="openDetailKuliner('docang-detail')">
+                                <img src="img/docang.jpg" alt="Thumbnail Docang">
+                                <span>Docang</span>
+                            </div>
+                            <div class="sidebar-item" id="sidebar-mie-koclok"
+                                onclick="openDetailKuliner('mie-koclok-detail')">
+                                <img src="img/miekoclok.jpg" alt="Thumbnail Mie Koclok">
+                                <span>Mie Koclok</span>
+                            </div>
+                            <div class="sidebar-item" id="sidebar-tahu-gejrot"
+                                onclick="openDetailKuliner('tahu-gejrot-detail')">
+                                <img src="img/tahu.jpg" alt="Thumbnail Tahu Gejrot">
+                                <span>Tahu Gejrot</span>
+                            </div>
+                            <div class="sidebar-item" id="sidebar-nasi-jamblang"
+                                onclick="openDetailKuliner('nasi-jamblang-detail')">
+                                <img src="img/jamblang.jpg" alt="Thumbnail Nasi Jamblang">
+                                <span>Nasi Jamblang</span>
+                            </div>
+                            <div class="sidebar-item" id="sidebar-empal-gentong"
+                                onclick="openDetailKuliner('empal-gentong-detail')">
+                                <img src="img/empal.jpg" alt="Thumbnail Empal Gentong">
+                                <span>Empal Gentong</span>
+                            </div>
+                            <div class="sidebar-item" id="sidebar-nasi-lengko"
+                                onclick="openDetailKuliner('nasi-lengko-detail')">
+                                <img src="img/nasiLengko.jpg" alt="Thumbnail Nasi Lengko">
+                                <span>Nasi Lengko</span>
+                            </div>
+                            <div class="sidebar-item" id="sidebar-gado-gado"
+                                onclick="openDetailKuliner('gado-gado-detail')">
+                                <img src="img/gadoGado.jpg" alt="Thumbnail Gado Gado Ayam">
+                                <span>Gado Gado Ayam</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="kontak" class="contact-section-wrapper">
+            <h1><span class="accent-text">Kontak</span> Kami</h1>
+            <div class="contact-section-divider"></div>
+
+            <div class="contact-hub">
+                <div class="contact-orb">
+                    <div class="orb-content">
+                        <div class="orb-front">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email Kami</span>
+                        </div>
+                        <div class="orb-back">
+                            <p>Kirim email ke:</p>
+                            <h4>contact@zeta.com</h4>
+                            <a href="mailto:contact@zeta.com">Buka Email Client</a>
+                            <button class="copy-button" data-copy="contact@zeta.com">Salin Email</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-orb">
+                    <div class="orb-content">
+                        <div class="orb-front">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>WhatsApp Kami</span>
+                        </div>
+                        <div class="orb-back">
+                            <p>Chat kami di:</p>
+                            <h4>+62 812-3456-7890</h4>
+                            <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer">Chat
+                                Sekarang</a>
+                            <button class="copy-button" data-copy="+6281234567890">Salin Nomor</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-orb">
+                    <div class="orb-content">
+                        <div class="orb-front">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub Zeta</span>
+                        </div>
+                        <div class="orb-back">
+                            <p>Kunjungi profil kami di:</p>
+                            <h4>github.com/zetaofficial</h4>
+                            <a href="https://github.com/zetaofficial" target="_blank" rel="noopener noreferrer">Kunjungi
+                                Profil</a>
+                            <button class="copy-button" data-copy="github.com/zetaofficial">Salin Link</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-section">
+                <h3>Kirim Pesan Langsung</h3>
+                <form>
+                    <input type="text" placeholder="Nama Anda" required>
+                    <input type="email" placeholder="Email Anda" required>
+                    <textarea placeholder="Pesan Anda" rows="5" required></textarea>
+                    <button type="submit">Kirim Pesan</button>
+                </form>
+            </div>
+        </section>
+
+        <nav class="bottom-nav">
+            <a href="#beranda" class="nav-item">
+                <span class="nav-icon">🏠</span>
+                <span class="nav-label">Beranda</span>
+            </a>
+            <a href="#sejarah" class="nav-item">
+                <span class="nav-icon">📜</span>
+                <span class="nav-label">Sejarah</span>
+            </a>
+            <a href="#seni" class="nav-item">
+                <span class="nav-icon">🎭</span>
+                <span class="nav-label">Seni</span>
+            </a>
+            <a href="#pariwisata" class="nav-item">
+                <span class="nav-icon">🗺️</span>
+                <span class="nav-label">Wisata</span>
+            </a>
+            <a href="#kuliner" class="nav-item">
+                <span class="nav-icon">🍲</span>
+                <span class="nav-label">Kuliner</span>
+            </a>
+            <a href="#kontak" class="nav-item">
+                <span class="nav-icon">📞</span>
+                <span class="nav-label">Kontak</span>
+            </a>
+        </nav>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
