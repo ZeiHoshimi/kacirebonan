@@ -5,10 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"integrity="sha512-Fo3rlalYj/G/X9L/9+FzBwX6u3h9a+o+W/o6Vz8q2t5g2S3t4j4o9n4y9z7f1e2i3p4i5n6f7e8a9d0+c/A=="crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Lora:ital,wght@1,700&display=swap"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Lora:ital,wght@1,700&display=swap" rel="stylesheet">
 
     <title>Kacirebonan</title>
 </head>
@@ -36,367 +33,303 @@
             </div>
         </section>
 
-        <section id="sejarah">
-            <div class="timeline-layout">
-                <div class="left-wheel">
-                    <div class="highlight"></div>
-                    <button id="btnUp"
-                        style="position: absolute; top: 10px; z-index: 3; background: none; border: none; color: var(--accent); font-size: 1.2rem; cursor: pointer;">▲</button>
-                    <div class="year-list" id="yearList">
-                        <div style="height: 200px;"></div>
-                        <div class="year-item selected" data-year="1400">1400-an</div>
-                        <div class="year-item" data-year="1500">1500-an</div>
-                        <div class="year-item" data-year="1600">1600-an</div>
-                        <div class="year-item" data-year="1700">1700-an</div>
-                        <div class="year-item" data-year="1800">1800-an</div>
-                        <div class="year-item" data-year="1900">1900-an</div>
-                        <div class="year-item" data-year="2000">2000-an</div>
-                        <div style="height: 200px;"></div>
+<section id="sejarah">
+    <div class="timeline-layout">
+        <div class="left-wheel">
+            <div class="highlight"></div>
+            <button id="btnUp"
+                style="position: absolute; top: 10px; z-index: 3; background: none; border: none; color: var(--accent); font-size: 1.2rem; cursor: pointer;">▲</button>
+            <div class="year-list" id="yearList">
+                <div style="height: 200px;"></div>
+                <div class="year-item selected" data-year="1400">1400-an</div>
+                <div class="year-item" data-year="1500">1500-an</div>
+                <div class="year-item" data-year="1600">1600-an</div>
+                <div class="year-item" data-year="1700">1700-an</div>
+                <div class="year-item" data-year="1800">1800-an</div>
+                <div class="year-item" data-year="1900">1900-an</div>
+                <div class="year-item" data-year="2000">2000-an</div>
+                <div style="height: 200px;"></div>
+            </div>
+            <button id="btnDown"
+                style="position: absolute; bottom: 10px; z-index: 3; background: none; border: none; color: var(--accent); font-size: 1.2rem; cursor: pointer;">▼</button>
+        </div>
+
+        <div class="right-content" id="contentArea">
+
+            <div class="year-content active" id="content1400">
+                <h2 class="section-title" id="dynamicTitle">1400-an — Awal Mula Cirebon</h2>
+                <div class="content-grid">
+                    <div class="image-side">
+                        <img src="img/images1.jpg" alt="Ilustrasi Pesisir Cirebon" />
+                        <p class="img-caption">Ilustrasi pesisir Cirebon di awal abad ke-15</p>
                     </div>
-                    <button id="btnDown"
-                        style="position: absolute; bottom: 10px; z-index: 3; background: none; border: none; color: var(--accent); font-size: 1.2rem; cursor: pointer;">▼</button>
+                    <div class="text-side">
+                        <div class="intro">
+                            <p>Abad ke-15 merupakan periode krusial bagi Cirebon. Di tengah pergeseran kekuasaan
+                                dari kerajaan-kerajaan Hindu-Buddha menuju kerajaan Islam, wilayah kecil bernama
+                                Muara Jati di pantai utara Jawa Barat mulai tumbuh menjadi pusat budaya dan
+                                agama yang akan dikenang sebagai Kesultanan Cirebon.</p>
+                        </div>
+                        <div class="timeline-section">
+                            <h3>📌 Peristiwa Penting</h3>
+                            <ul>
+                                <li>Awal Dakwah Islam di Muara Jati</li>
+                                <li>Pendirian Pemukiman Cikal Bakal Cirebon</li>
+                                <li>Kedatangan Sunan Gunung Jati</li>
+                                <li>Awal Pembentukan Komunitas Muslim</li>
+                            </ul>
+                        </div>
+                        <div class="keywords">
+                            <h4>Kata Kunci</h4>
+                            <div class="tags">
+                                <span>Muara Jati</span>
+                                <span>Ki Gedeng Tapa</span>
+                                <span>Penyebaran Islam</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="right-content" id="contentArea">
-                    
-                    <div class="year-content active" id="content1400">
-                        <h2 class="section-title" id="dynamicTitle">1400-an — Awal Mula Cirebon</h2>
-                        <div class="content-grid">
-                            <div class="image-side">
-                                <img src="img/images1.jpg" alt="Ilustrasi Pesisir Cirebon" />
-                                <p class="img-caption">Ilustrasi pesisir Cirebon di awal abad ke-15</p>
-                            </div>
-                            <div class="text-side">
-                                <div class="intro">
-                                    <p>Abad ke-15 merupakan periode krusial bagi Cirebon. Di tengah pergeseran kekuasaan
-                                        dari kerajaan-kerajaan Hindu-Buddha menuju kerajaan Islam, wilayah kecil bernama
-                                        Muara Jati di pantai utara Jawa Barat mulai tumbuh menjadi pusat budaya dan
-                                        agama yang akan dikenang sebagai Kesultanan Cirebon.</p>
-                                </div>
-                                <div class="timeline-section">
-                                    <h3>📌 Peristiwa Penting</h3>
-                                    <ul>
-                                        <li><strong>1420–1440:</strong> Awal Mula Islam Masuk</li>
-                                        <li><strong>1445:</strong> Ki Gedeng Tapa mendirikan pemukiman dan pelabuhan di
-                                            Muara Jati sebagai cikal bakal Kota Cirebon.</li>
-                                        <li><strong>1470:</strong> Sunan Gunung Jati datang ke Cirebon dan mulai
-                                            menyebarkan Islam melalui pendekatan budaya dan dakwah yang damai.</li>
-                                        <li><strong>Akhir 1400-an:</strong> Terbentuknya komunitas Muslim lokal,
-                                            pembangunan masjid kecil, serta munculnya budaya baru yang memadukan nilai
-                                            Islam dan tradisi pesisir.</li>
-                                    </ul>
-                                </div>
-                                <div class="keywords">
-                                    <h4>Tokoh penting</h4>
-                                    <div class="tags">
-                                        <span>Muara Jati</span>
-                                        <span>Ki Gedeng Tapa</span>
-                                        <span>Penyebaran Islam</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="summary-box">
-                            <h4>Rangkuman</h4>
-                            <p>Docang adalah makanan khas Cirebon yang terbuat dari campuran lontong, daun singkong,
-                                tauge, kerupuk, dan disiram kuah oncom merah yang pedas. Uniknya, docang disajikan
-                                dengan siraman parutan kelapa sangrai yang gurih, menciptakan perpaduan rasa manis,
-                                pedas, dan gurih yang kaya.</p>
-                        </div>
-                    </div>
-
-                    <div class="year-content" id="content1500">
-                        <h2 class="section-title">1500-an — Kejayaan Kesultanan Cirebon</h2>
-                        <div class="content-grid">
-                            <div class="image-side">
-                                <img src="img/images1.jpg" alt="Kesultanan Cirebon Abad 16" />
-                                <p class="img-caption">Ilustrasi Kesultanan Cirebon pada puncak kejayaannya</p>
-                            </div>
-                            <div class="text-side">
-                                <div class="intro">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio doloribus
-                                        voluptatum totam iure blanditiis aliquam magni, fuga facere harum, libero
-                                        pariatur recusandae quas,
-                                        excepturi ipsa similique perspiciatis sit voluptates rerum. Lorem ipsum dolor
-                                        sit amet, consectetur
-                                        adipisicing elit. Atque architecto esse necessitatibus possimus ea omnis, neque
-                                        doloribus ex velit,
-                                        eius beatae dolorem non aspernatur dolorum fugit fuga, at expedita! Accusantium.
-                                    </p>
-                                </div>
-                                <div class="tirai timeline-section">
-                                    <h3>📌 Peristiwa Penting</h3>
-                                    <ul>
-                                        <li><strong>1510:</strong> Pengukuhan Kesultanan Cirebon sebagai kerajaan Islam
-                                            independen.</li>
-                                        <li><strong>1527:</strong> Sunan Gunung Jati berperan dalam penaklukan Sunda
-                                            Kelapa bersama Demak.</li>
-                                        <li><strong>1552:</strong> Peningkatan hubungan diplomatik dan perdagangan
-                                            dengan kerajaan luar.</li>
-                                    </ul>
-                                </div>
-                                <div class="keywords">
-                                    <h4>Kata Kunci</h4>
-                                    <div class="tags">
-                                        <span>Kesultanan Cirebon</span>
-                                        <span>Sunan Gunung Jati</span>
-                                        <span>Islam Nusantara</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="summary-box">
-                            <h4> Rangkuman</h4>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores explicabo saepe
-                                fugit voluptate, doloremque architecto hic non illo incidunt accusantium qui optio est
-                                ipsum commodi
-                                vitae iste nihil repudiandae suscipit? Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Eligendi
-                                illo illum cumque tenetur soluta placeat repellat facere corrupti error, tempora porro
-                                nemo odio
-                                necessitatibus natus voluptates, praesentium reprehenderit alias in. Lorem ipsum dolor,
-                                sit amet
-                                consectetur adipisicing elit. Fugiat, suscipit? Tempore non aperiam quisquam cumque, hic
-                                obcaecati! Minus
-                                praesentium voluptates distinctio unde, laborum at mollitia quae consequatur
-                                necessitatibus iusto eveniet?
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis aut quo voluptate dicta
-                                dignissimos. Fugiat
-                                et aut maxime, ex ipsum nulla ullam accusantium dicta esse nesciunt veritatis molestiae
-                                eaque recusandae?</p>
-                        </div>
-                    </div>
-
-                    <div class="year-content" id="content1600">
-                        <h2 class="section-title">1600-an — Kontak Awal dengan Dunia Barat</h2>
-                        <div class="content-grid">
-                            <div class="image-side">
-                                <img src="img/images1.jpg" alt="Kontak Barat" />
-                                <p class="img-caption">Ilustrasi pedagang Eropa di Cirebon</p>
-                            </div>
-                            <div class="text-side">
-                                <div class="intro">
-                                    <p>Abad ke-17 menandai dimulainya interaksi yang lebih intens antara Kesultanan
-                                        Cirebon dengan kekuatan-kekuatan Barat, khususnya VOC (Vereenigde Oostindische
-                                        Compagnie) atau Perusahaan Hindia Timur Belanda. Ini membawa perubahan
-                                        signifikan dalam dinamika politik dan ekonomi Cirebon.</p>
-                                </div>
-                                <div class="timeline-section">
-                                    <h3>📌 Peristiwa Penting</h3>
-                                    <ul>
-                                        <li><strong>Awal 1600-an:</strong> Kedatangan VOC di Nusantara dan mulai
-                                            memperluas pengaruhnya di pesisir Jawa.</li>
-                                        <li><strong>1620-an:</strong> VOC mulai menjalin hubungan dagang dengan Cirebon,
-                                            terutama untuk komoditas seperti beras dan rempah-rempah.</li>
-                                        <li><strong>1677:</strong> Perjanjian antara Amangkurat II dari Mataram dengan
-                                            VOC yang berdampak pada status Cirebon, menempatkannya di bawah pengaruh
-                                            tidak langsung VOC.</li>
-                                        <li><strong>Akhir 1600-an:</strong> Munculnya perselisihan internal di
-                                            Kesultanan Cirebon yang dimanfaatkan oleh VOC untuk memperkuat posisinya.
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="keywords">
-                                    <h4>Kata Kunci</h4>
-                                    <div class="tags">
-                                        <span>VOC</span>
-                                        <span>Perdagangan</span>
-                                        <span>Mataram</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="summary-box">
-                            <h4>Rangkuman</h4>
-                            <p>Abad ke-17 adalah periode transisi bagi Cirebon, dari kemandirian penuh menjadi wilayah
-                                yang mulai merasakan dampak dominasi kolonial. Konflik internal dan intervensi asing
-                                menjadi tantangan baru bagi Kesultanan Cirebon.</p>
-                        </div>
-                    </div>
-                    <div class="year-content" id="content1700">
-                        <h2 class="section-title">1700-an — Konflik dan Perpecahan</h2>
-                        <div class="content-grid">
-                            <div class="image-side">
-                                <img src="img/images1.jpg" alt="Perpecahan Keraton" />
-                                <p class="img-caption">Ilustrasi konflik di dalam keraton Cirebon</p>
-                            </div>
-                            <div class="text-side">
-                                <div class="intro">
-                                    <p>Abad ke-18 ditandai dengan semakin melemahnya Kesultanan Cirebon akibat
-                                        perpecahan internal dan intervensi VOC yang semakin dalam. Wilayah ini terbagi
-                                        menjadi beberapa keraton yang saling bersaing, melemahkan kekuatan politik
-                                        Cirebon secara keseluruhan.</p>
-                                </div>
-                                <div class="timeline-section">
-                                    <h3>📌 Peristiwa Penting</h3>
-                                    <ul>
-                                        <li><strong>1700-an Awal:</strong> Pembagian Kesultanan Cirebon menjadi tiga
-                                            keraton utama: Kasepuhan, Kanoman, dan Kacirebonan.</li>
-                                        <li><strong>Sepanjang Abad ke-18:</strong> Persaingan politik antar keraton yang
-                                            dimanfaatkan VOC untuk mengontrol wilayah.</li>
-                                        <li><strong>1740-an:</strong> VOC menguasai penuh pelabuhan Cirebon dan
-                                            mengontrol jalur perdagangan penting.</li>
-                                        <li><strong>Akhir 1700-an:</strong> Fungsi keraton beralih lebih kepada aspek
-                                            budaya dan keagamaan, sementara kekuasaan politik murni dipegang VOC.</li>
-                                    </ul>
-                                </div>
-                                <div class="keywords">
-                                    <h4>Kata Kunci</h4>
-                                    <div class="tags">
-                                        <span>Perpecahan Keraton</span>
-                                        <span>VOC</span>
-                                        <span>Pengaruh Kolonial</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="summary-box">
-                            <h4>Rangkuman</h4>
-                            <p>Abad ke-18 adalah periode suram bagi Kesultanan Cirebon dengan adanya perpecahan internal
-                                yang masif dan dominasi VOC. Cirebon kehilangan sebagian besar otonomi politiknya dan
-                                menjadi wilayah di bawah kendali kolonial Belanda.</p>
-                        </div>
-                    </div>
-                    <div class="year-content" id="content1800">
-                        <h2 class="section-title">1800-an — Dominasi Belanda & Keraton</h2>
-                        <div class="content-grid">
-                            <div class="image-side">
-                                <img src="img/images1.jpg" alt="Pemerintahan Kolonial" />
-                                <p class="img-caption">Ilustrasi kantor pemerintahan Belanda di Cirebon</p>
-                            </div>
-                            <div class="text-side">
-                                <div class="intro">
-                                    <p>Pada abad ke-19, Cirebon sepenuhnya berada di bawah kendali pemerintahan kolonial
-                                        Belanda. Meskipun keraton-keraton masih ada, fungsi mereka hanya sebatas simbol
-                                        budaya dan keagamaan, tanpa kekuatan politik yang berarti.</p>
-                                </div>
-                                <div class="timeline-section">
-                                    <h3>📌 Peristiwa Penting</h3>
-                                    <ul>
-                                        <li><strong>1808:</strong> Penerapan sistem pemerintahan kolonial yang lebih
-                                            terstruktur oleh Daendels.</li>
-                                        <li><strong>1830-an:</strong> Pemberlakuan Sistem Tanam Paksa (Cultuurstelsel)
-                                            yang sangat memengaruhi kehidupan ekonomi rakyat Cirebon.</li>
-                                        <li><strong>Pertengahan Abad ke-19:</strong> Pembangunan infrastruktur oleh
-                                            Belanda, seperti jalan raya dan jalur kereta api, untuk mendukung
-                                            kepentingan ekonomi kolonial.</li>
-                                        <li><strong>Akhir 1800-an:</strong> Keraton-keraton Cirebon menjadi pusat
-                                            pelestarian budaya dan tradisi, tetapi kehilangan peran politiknya secara
-                                            total.</li>
-                                    </ul>
-                                </div>
-                                <div class="keywords">
-                                    <h4>Kata Kunci</h4>
-                                    <div class="tags">
-                                        <span>Kolonial Belanda</span>
-                                        <span>Tanam Paksa</span>
-                                        <span>Infrastruktur</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="summary-box">
-                            <h4>Rangkuman</h4>
-                            <p>Abad ke-19 adalah era dominasi penuh Belanda di Cirebon, yang membawa perubahan drastis
-                                dalam ekonomi dan sosial masyarakat melalui kebijakan-kebijakan kolonial. Keraton
-                                Cirebon berubah menjadi penjaga budaya di tengah kekuasaan asing.</p>
-                        </div>
-                    </div>
-                    <div class="year-content" id="content1900">
-                        <h2 class="section-title">1900-an — Pergerakan & Kemerdekaan</h2>
-                        <div class="content-grid">
-                            <div class="image-side">
-                                <img src="img/images1.jpg" alt="Pergerakan Nasional" />
-                                <p class="img-caption">Ilustrasi tokoh pergerakan di Cirebon</p>
-                            </div>
-                            <div class="text-side">
-                                <div class="intro">
-                                    <p>Abad ke-20 menjadi saksi bangkitnya semangat nasionalisme dan perjuangan
-                                        kemerdekaan di Cirebon, seperti di daerah lain di Indonesia. Rakyat Cirebon
-                                        turut serta dalam pergerakan menuju Indonesia merdeka, menghadapi berbagai
-                                        tantangan dari penjajahan hingga masa revolusi.</p>
-                                </div>
-                                <div class="timeline-section">
-                                    <h3>📌 Peristiwa Penting</h3>
-                                    <ul>
-                                        <li><strong>Awal 1900-an:</strong> Munculnya organisasi pergerakan nasional di
-                                            Cirebon, seperti Sarekat Islam dan Indische Partij.</li>
-                                        <li><strong>Masa Pendudukan Jepang (1942-1945):</strong> Cirebon mengalami
-                                            dampak pendudukan Jepang dan kekejaman VOC.</li>
-                                        <li><strong>17 Agustus 1945:</strong> Proklamasi Kemerdekaan Indonesia disambut
-                                            antusias di Cirebon, memicu gejolak revolusi.</li>
-                                        <li><strong>Periode Revolusi Fisik (1945-1949):</strong> Cirebon menjadi salah
-                                            satu medan pertempuran sengit antara pejuang kemerdekaan dan pasukan
-                                            Belanda.</li>
-                                        <li><strong>Pasca-Kemerdekaan:</strong> Cirebon menjadi bagian dari Republik
-                                            Indonesia dan mulai membangun kembali daerahnya.</li>
-                                    </ul>
-                                </div>
-                                <div class="keywords">
-                                    <h4>Kata Kunci</h4>
-                                    <div class="tags">
-                                        <span>Nasionalisme</span>
-                                        <span>Revolusi Fisik</span>
-                                        <span>Kemerdekaan</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="summary-box">
-                            <h4>Rangkuman</h4>
-                            <p>Abad ke-20 adalah periode heroik bagi Cirebon, di mana semangat pergerakan nasional dan
-                                perjuangan kemerdekaan berkobar. Cirebon turut serta dalam sejarah panjang bangsa
-                                Indonesia menuju kemerdekaan dan pembangunan pasca-revolusi.</p>
-                        </div>
-                    </div>
-                    <div class="year-content" id="content2000">
-                        <h2 class="section-title">2000-an — Cirebon Modern dan Digital</h2>
-                        <div class="content-grid">
-                            <div class="image-side">
-                                <img src="img/images1.jpg" alt="Cirebon Modern" />
-                                <p class="img-caption">Pemandangan kota Cirebon modern</p>
-                            </div>
-                            <div class="text-side">
-                                <div class="intro">
-                                    <p>Memasuki milenium baru, Cirebon bertransformasi menjadi kota modern yang terus
-                                        berkembang, namun tetap mempertahankan warisan budaya yang kaya. Perkembangan
-                                        teknologi dan digitalisasi membawa banyak perubahan positif, membuka peluang
-                                        baru bagi masyarakat Cirebon.</p>
-                                </div>
-                                <div class="timeline-section">
-                                    <h3>📌 Peristiwa Penting</h3>
-                                    <ul>
-                                        <li><strong>Awal 2000-an:</strong> Pembangunan infrastruktur modern dan
-                                            pertumbuhan ekonomi yang pesat di Cirebon.</li>
-                                        <li><strong>2010-an:</strong> Peningkatan pariwisata berkat promosi budaya dan
-                                            kuliner khas Cirebon.</li>
-                                        <li><strong>Pertengahan 2010-an:</strong> Inisiatif smart city dan adopsi
-                                            teknologi digital dalam pelayanan publik dan kehidupan sehari-hari.</li>
-                                        <li><strong>Sekarang:</strong> Cirebon menjadi pusat regional yang penting di
-                                            Jawa Barat bagian timur, dengan fokus pada pengembangan ekonomi kreatif dan
-                                            pelestarian budaya.</li>
-                                    </ul>
-                                </div>
-                                <div class="keywords">
-                                    <h4>Kata Kunci</h4>
-                                    <div class="tags">
-                                        <span>Smart City</span>
-                                        <span>Pariwisata</span>
-                                        <span>Ekonomi Kreatif</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="summary-box">
-                            <h4>Rangkuman</h4>
-                            <p>Abad ke-21 adalah era Cirebon yang modern dan adaptif, merangkul teknologi dan inovasi
-                                tanpa melupakan akar budayanya. Kota ini terus berkembang menjadi pusat kegiatan
-                                ekonomi, pariwisata, dan budaya yang dinamis di Jawa Barat.</p>
-                        </div>
-                    </div>
+                <div class="summary-box">
+                    <h4>Rangkuman</h4>
+                    <p>Abad ke-15 adalah masa fundamental bagi Cirebon, ditandai dengan munculnya Muara Jati sebagai pusat perdagangan dan dakwah Islam. Sekitar <strong>1420–1440</strong>, Islam mulai diperkenalkan. Pada <strong>1445</strong>, Ki Gedeng Tapa mendirikan pemukiman dan pelabuhan di Muara Jati yang menjadi cikal bakal Kota Cirebon. Kedatangan Sunan Gunung Jati sekitar <strong>1470</strong> menjadi tonggak penting dalam penyebaran Islam melalui pendekatan budaya dan dakwah yang damai. Menjelang akhir abad, mulai terbentuk komunitas Muslim lokal dan pembangunan masjid kecil, serta munculnya budaya baru yang memadukan nilai Islam dan tradisi pesisir.</p>
                 </div>
             </div>
-        </section>
+
+            <div class="year-content" id="content1500">
+                <h2 class="section-title">1500-an — Kejayaan Kesultanan Cirebon</h2>
+                <div class="content-grid">
+                    <div class="image-side">
+                        <img src="img/images1.jpg" alt="Kesultanan Cirebon Abad 16" />
+                        <p class="img-caption">Ilustrasi Kesultanan Cirebon pada puncak kejayaannya</p>
+                    </div>
+                    <div class="text-side">
+                        <div class="intro">
+                            <p>Memasuki abad ke-16, Kesultanan Cirebon mencapai puncak kejayaannya sebagai salah satu pusat penyebaran Islam terbesar di Jawa. Di bawah kepemimpinan Sunan Gunung Jati dan penerusnya, Cirebon menjadi kota pelabuhan yang ramai, pusat perdagangan, sekaligus mercusuar kebudayaan dan agama yang disegani.</p>
+                        </div>
+                        <div class="timeline-section">
+                            <h3>📌 Peristiwa Penting</h3>
+                            <ul>
+                                <li>Perluasan Wilayah dan Pengaruh</li>
+                                <li>Penaklukan Sunda Kelapa (Jayakarta)</li>
+                                <li>Cirebon sebagai Pusat Studi Islam</li>
+                                <li>Wafatnya Sunan Gunung Jati</li>
+                            </ul>
+                        </div>
+                        <div class="keywords">
+                            <h4>Kata Kunci</h4>
+                            <div class="tags">
+                                <span>Puncak Kejayaan</span>
+                                <span>Fatahillah</span>
+                                <span>Jayakarta</span>
+                                <span>Seni Budaya Islam</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="summary-box">
+                    <h4>Rangkuman</h4>
+                    <p>Abad ke-16 adalah masa keemasan Kesultanan Cirebon. Pada <strong>awal 1500-an</strong>, terjadi perluasan wilayah dan pengaruh Kesultanan ke daerah sekitarnya, termasuk Banten dan Jakarta. Puncak kejayaan ditandai dengan keberhasilan pasukan gabungan Cirebon-Demak di bawah Fatahillah pada <strong>1527</strong> merebut Sunda Kelapa dari Portugis dan mengubahnya menjadi Jayakarta. Sepanjang <strong>pertengahan 1500-an</strong>, Cirebon berkembang menjadi pusat studi Islam dan pengembangan seni budaya seperti batik Megamendung dan tari topeng. Periode ini berakhir dengan wafatnya Sunan Gunung Jati pada <strong>1568</strong>, meninggalkan warisan spiritual dan politik yang kuat.</p>
+                </div>
+            </div>
+
+            <div class="year-content" id="content1600">
+                <h2 class="section-title">1600-an — Kontak Awal dengan Dunia Barat</h2>
+                <div class="content-grid">
+                    <div class="image-side">
+                        <img src="img/images1.jpg" alt="Kontak Barat" />
+                        <p class="img-caption">Ilustrasi pedagang Eropa di Cirebon</p>
+                    </div>
+                    <div class="text-side">
+                        <div class="intro">
+                            <p>Abad ke-17 menandai dimulainya interaksi yang lebih intens antara Kesultanan
+                                Cirebon dengan kekuatan-kekuatan Barat, khususnya VOC (Vereenigde Oostindische
+                                Compagnie) atau Perusahaan Hindia Timur Belanda. Ini membawa perubahan
+                                signifikan dalam dinamika politik dan ekonomi Cirebon.</p>
+                        </div>
+                        <div class="timeline-section">
+                            <h3>📌 Peristiwa Penting</h3>
+                            <ul>
+                                <li>Kedatangan VOC di Nusantara</li>
+                                <li>Awal Hubungan Dagang dengan Cirebon</li>
+                                <li>Perjanjian dengan Mataram dan Dampaknya</li>
+                                <li>Intervensi VOC dalam Internal Kesultanan</li>
+                            </ul>
+                        </div>
+                        <div class="keywords">
+                            <h4>Kata Kunci</h4>
+                            <div class="tags">
+                                <span>VOC</span>
+                                <span>Perdagangan</span>
+                                <span>Mataram</span>
+                                <span>Intervensi Asing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="summary-box">
+                    <h4>Rangkuman</h4>
+                    <p>Abad ke-17 adalah periode transisi bagi Cirebon, dari kemandirian penuh menjadi wilayah yang mulai merasakan dampak dominasi kolonial. Pada <strong>awal 1600-an</strong>, VOC tiba di Nusantara dan mulai memperluas pengaruhnya. Sekitar <strong>1620-an</strong>, VOC menjalin hubungan dagang dengan Cirebon, terutama untuk komoditas seperti beras dan rempah-rempah. Pada <strong>1677</strong>, perjanjian antara Amangkurat II dari Mataram dengan VOC secara tidak langsung menempatkan Cirebon di bawah pengaruh VOC. Menjelang <strong>akhir 1600-an</strong>, VOC memanfaatkan perselisihan internal di Kesultanan Cirebon untuk memperkuat posisinya.</p>
+                </div>
+            </div>
+            <div class="year-content" id="content1700">
+                <h2 class="section-title">1700-an — Konflik dan Perpecahan</h2>
+                <div class="content-grid">
+                    <div class="image-side">
+                        <img src="img/images1.jpg" alt="Perpecahan Keraton" />
+                        <p class="img-caption">Ilustrasi konflik di dalam keraton Cirebon</p>
+                    </div>
+                    <div class="text-side">
+                        <div class="intro">
+                            <p>Abad ke-18 ditandai dengan semakin melemahnya Kesultanan Cirebon akibat
+                                perpecahan internal dan intervensi VOC yang semakin dalam. Wilayah ini terbagi
+                                menjadi beberapa keraton yang saling bersaing, melemahkan kekuatan politik
+                                Cirebon secara keseluruhan.</p>
+                        </div>
+                        <div class="timeline-section">
+                            <h3>📌 Peristiwa Penting</h3>
+                            <ul>
+                                <li>Pembagian Tiga Keraton</li>
+                                <li>Persaingan Antar Keraton</li>
+                                <li>VOC Kuasai Pelabuhan</li>
+                                <li>Pergeseran Fungsi Keraton</li>
+                            </ul>
+                        </div>
+                        <div class="keywords">
+                            <h4>Kata Kunci</h4>
+                            <div class="tags">
+                                <span>Perpecahan Keraton</span>
+                                <span>VOC</span>
+                                <span>Pengaruh Kolonial</span>
+                                <span>Monopoli Dagang</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="summary-box">
+                    <h4>Rangkuman</h4>
+                    <p>Abad ke-18 adalah periode suram bagi Kesultanan Cirebon dengan adanya perpecahan internal yang masif dan dominasi VOC. Pada <strong>awal 1700-an</strong>, Kesultanan terbagi menjadi tiga keraton utama: Kasepuhan, Kanoman, dan Kacirebonan, dipicu oleh perselisihan suksesi. Sepanjang abad ini, persaingan politik antar keraton dimanfaatkan VOC untuk mengontrol wilayah dan monopoli perdagangan. Sekitar <strong>1740-an</strong>, VOC menguasai penuh pelabuhan Cirebon, membatasi otonomi. Menjelang <strong>akhir 1700-an</strong>, fungsi keraton beralih lebih kepada aspek budaya dan keagamaan, sementara kekuasaan politik murni dipegang VOC.</p>
+                </div>
+            </div>
+            <div class="year-content" id="content1800">
+                <h2 class="section-title">1800-an — Dominasi Belanda & Keraton</h2>
+                <div class="content-grid">
+                    <div class="image-side">
+                        <img src="img/images1.jpg" alt="Pemerintahan Kolonial" />
+                        <p class="img-caption">Ilustrasi kantor pemerintahan Belanda di Cirebon</p>
+                    </div>
+                    <div class="text-side">
+                        <div class="intro">
+                            <p>Pada abad ke-19, Cirebon sepenuhnya berada di bawah kendali pemerintahan kolonial
+                                Belanda. Meskipun keraton-keraton masih ada, fungsi mereka hanya sebatas simbol
+                                budaya dan keagamaan, tanpa kekuatan politik yang berarti.</p>
+                        </div>
+                        <div class="timeline-section">
+                            <h3>📌 Peristiwa Penting</h3>
+                            <ul>
+                                <li>Penerapan Sistem Kolonial Daendels</li>
+                                <li>Pemberlakuan Sistem Tanam Paksa</li>
+                                <li>Pembangunan Infrastruktur Kolonial</li>
+                                <li>Keraton Menjadi Penjaga Budaya</li>
+                            </ul>
+                        </div>
+                        <div class="keywords">
+                            <h4>Kata Kunci</h4>
+                            <div class="tags">
+                                <span>Kolonial Belanda</span>
+                                <span>Tanam Paksa</span>
+                                <span>Infrastruktur</span>
+                                <span>Keraton Simbolis</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="summary-box">
+                    <h4>Rangkuman</h4>
+                    <p>Abad ke-19 adalah era dominasi penuh Belanda di Cirebon. Pada <strong>1808</strong>, sistem pemerintahan kolonial yang lebih terstruktur diterapkan oleh Daendels. Kemudian, pada <strong>1830-an</strong>, pemberlakuan Sistem Tanam Paksa (Cultuurstelsel) sangat memengaruhi kehidupan ekonomi rakyat, khususnya di sektor pertanian. Sepanjang <strong>pertengahan abad ke-19</strong>, Belanda membangun infrastruktur seperti jalan raya dan jalur kereta api (misalnya jalur Cirebon-Jakarta) untuk kepentingan ekonomi mereka. Menjelang <strong>akhir 1800-an</strong>, keraton-keraton Cirebon berubah fungsi menjadi pusat pelestarian budaya dan tradisi, kehilangan total peran politiknya dan lebih berfokus pada kegiatan seremonial.</p>
+                </div>
+            </div>
+            <div class="year-content" id="content1900">
+                <h2 class="section-title">1900-an — Pergerakan & Kemerdekaan</h2>
+                <div class="content-grid">
+                    <div class="image-side">
+                        <img src="img/images1.jpg" alt="Pergerakan Nasional" />
+                        <p class="img-caption">Ilustrasi tokoh pergerakan di Cirebon</p>
+                    </div>
+                    <div class="text-side">
+                        <div class="intro">
+                            <p>Abad ke-20 menjadi saksi bangkitnya semangat nasionalisme dan perjuangan
+                                kemerdekaan di Cirebon, seperti di daerah lain di Indonesia. Rakyat Cirebon
+                                turut serta dalam pergerakan menuju Indonesia merdeka, menghadapi berbagai
+                                tantangan dari penjajahan hingga masa revolusi.</p>
+                        </div>
+                        <div class="timeline-section">
+                            <h3>📌 Peristiwa Penting</h3>
+                            <ul>
+                                <li>Munculnya Organisasi Pergerakan</li>
+                                <li>Dampak Pendudukan Jepang</li>
+                                <li>Proklamasi Kemerdekaan</li>
+                                <li>Periode Revolusi Fisik</li>
+                                <li>Pembangunan Pasca-Kemerdekaan</li>
+                            </ul>
+                        </div>
+                        <div class="keywords">
+                            <h4>Kata Kunci</h4>
+                            <div class="tags">
+                                <span>Nasionalisme</span>
+                                <span>Revolusi Fisik</span>
+                                <span>Kemerdekaan</span>
+                                <span>Pendudukan Jepang</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="summary-box">
+                    <h4>Rangkuman</h4>
+                    <p>Abad ke-20 adalah periode heroik bagi Cirebon, di mana semangat pergerakan nasional dan perjuangan kemerdekaan berkobar. Pada <strong>awal 1900-an</strong>, organisasi seperti Sarekat Islam (cabang Cirebon) mulai muncul. Cirebon juga mengalami dampak pendudukan Jepang (<strong>1942-1945</strong>), termasuk sistem kerja paksa. Proklamasi Kemerdekaan Indonesia pada <strong>17 Agustus 1945</strong> disambut antusias, memicu gejolak revolusi. Selama <strong>periode Revolusi Fisik (1945-1949)</strong>, Cirebon menjadi medan pertempuran sengit. <strong>Pasca-Kemerdekaan</strong>, Cirebon menjadi bagian dari Republik Indonesia dan mulai membangun serta beradaptasi dengan sistem pemerintahan baru.</p>
+                </div>
+            </div>
+            <div class="year-content" id="content2000">
+                <h2 class="section-title">2000-an — Cirebon Modern dan Digital</h2>
+                <div class="content-grid">
+                    <div class="image-side">
+                        <img src="img/images1.jpg" alt="Cirebon Modern" />
+                        <p class="img-caption">Pemandangan kota Cirebon modern</p>
+                    </div>
+                    <div class="text-side">
+                        <div class="intro">
+                            <p>Memasuki milenium baru, Cirebon bertransformasi menjadi kota modern yang terus
+                                berkembang, namun tetap mempertahankan warisan budaya yang kaya. Perkembangan
+                                teknologi dan digitalisasi membawa banyak perubahan positif, membuka peluang
+                                baru bagi masyarakat Cirebon.</p>
+                        </div>
+                        <div class="timeline-section">
+                            <h3>📌 Peristiwa Penting</h3>
+                            <ul>
+                                <li>Pembangunan Infrastruktur Modern</li>
+                                <li>Peningkatan Sektor Pariwisata</li>
+                                <li>Inisiatif Smart City</li>
+                                <li>Fokus pada Ekonomi Kreatif & Budaya</li>
+                            </ul>
+                        </div>
+                        <div class="keywords">
+                            <h4>Kata Kunci</h4>
+                            <div class="tags">
+                                <span>Smart City</span>
+                                <span>Pariwisata</span>
+                                <span>Ekonomi Kreatif</span>
+                                <span>Digitalisasi</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="summary-box">
+                    <h4>Rangkuman</h4>
+                    <p>Abad ke-21 adalah era Cirebon yang modern dan adaptif, merangkul teknologi dan inovasi tanpa melupakan akar budayanya. Pada <strong>awal 2000-an</strong>, terjadi pembangunan infrastruktur modern (misalnya perluasan jalan tol) dan pertumbuhan ekonomi pesat. Sepanjang <strong>2010-an</strong>, pariwisata meningkat berkat promosi budaya dan kuliner. <strong>Pertengahan 2010-an</strong>, inisiatif smart city dicanangkan, diikuti adopsi teknologi digital. <strong>Saat ini</strong>, Cirebon menjadi pusat regional penting di Jawa Barat bagian timur, dengan fokus pada pengembangan ekonomi kreatif, pelestarian budaya, dan peningkatan kualitas hidup berbasis teknologi.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
         <section id="seni" class="content-wrapper">
             <div id="seni-grid-view">
@@ -535,7 +468,7 @@
             </div>
         </section>
 
-        <section id="pariwisata" class="tourism-section-wrapper">
+        <section id="wisata" class="tourism-section-wrapper">
             <div class="container">
                 <header class="tourism-header">
                     <h1>Jelajah Pesona Kacirebonan</h1>
@@ -765,21 +698,20 @@
         </section>
 
         <section id="kontak" class="contact-section-wrapper">
-            <h1><span class="accent-text">Kontak</span> Kami</h1>
+            <h1><span class="accent-text">Kontak</span> Saya</h1>
             <div class="contact-section-divider"></div>
 
             <div class="contact-hub">
                 <div class="contact-orb">
                     <div class="orb-content">
                         <div class="orb-front">
-                            <i class="fas fa-envelope"></i>
-                            <span>Email Kami</span>
+                            <span>Email Saya</span>
                         </div>
                         <div class="orb-back">
                             <p>Kirim email ke:</p>
-                            <h4>contact@zeta.com</h4>
-                            <a href="mailto:contact@zeta.com">Buka Email Client</a>
-                            <button class="copy-button" data-copy="contact@zeta.com">Salin Email</button>
+                            <h4>widiblambaem@gmail.com</h4>
+                            <a href="mailto:widiblambaem@gmail.com">Buka Email Client</a>
+                            <button class="copy-button" data-copy="widiblambaem@gmail.com">Salin Email</button>
                         </div>
                     </div>
                 </div>
@@ -787,15 +719,14 @@
                 <div class="contact-orb">
                     <div class="orb-content">
                         <div class="orb-front">
-                            <i class="fab fa-whatsapp"></i>
-                            <span>WhatsApp Kami</span>
+                            <span>WhatsApp Saya</span>
                         </div>
                         <div class="orb-back">
-                            <p>Chat kami di:</p>
-                            <h4>+62 812-3456-7890</h4>
-                            <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer">Chat
+                            <p>Chat Saya di:</p>
+                            <h4>+62 8953-4337-6001</h4>
+                            <a href="https://wa.me/895343376001" target="_blank" rel="noopener noreferrer">Chat
                                 Sekarang</a>
-                            <button class="copy-button" data-copy="+6281234567890">Salin Nomor</button>
+                            <button class="copy-button" data-copy="+895343376001">Salin Nomor</button>
                         </div>
                     </div>
                 </div>
@@ -803,15 +734,14 @@
                 <div class="contact-orb">
                     <div class="orb-content">
                         <div class="orb-front">
-                            <i class="fab fa-github"></i>
-                            <span>GitHub Zeta</span>
+                            <span>GitHub Saya</span>
                         </div>
                         <div class="orb-back">
-                            <p>Kunjungi profil kami di:</p>
-                            <h4>github.com/zetaofficial</h4>
-                            <a href="https://github.com/zetaofficial" target="_blank" rel="noopener noreferrer">Kunjungi
+                            <p>Kunjungi profil Saya di:</p>
+                            <h4>ZeiHoshimi</h4>
+                            <a href="https://github.com/ZeiHoshimi" target="_blank" rel="noopener noreferrer">Kunjungi
                                 Profil</a>
-                            <button class="copy-button" data-copy="github.com/zetaofficial">Salin Link</button>
+                            <button class="copy-button" data-copy="https://github.com/ZeiHoshimi">Salin Link</button>
                         </div>
                     </div>
                 </div>
@@ -829,27 +759,27 @@
         </section>
 
         <nav class="bottom-nav">
-            <a href="#beranda" class="nav-item">
+            <a href="#beranda" class="nav-item" onclick="window.location.href='#beranda'">
                 <span class="nav-icon">🏠</span>
                 <span class="nav-label">Beranda</span>
             </a>
-            <a href="#sejarah" class="nav-item">
+            <a href="#sejarah" class="nav-item" onclick="window.location.href='#sejarah'">
                 <span class="nav-icon">📜</span>
                 <span class="nav-label">Sejarah</span>
             </a>
-            <a href="#seni" class="nav-item">
+            <a href="#seni" class="nav-item" onclick="window.location.href='#seni'">
                 <span class="nav-icon">🎭</span>
                 <span class="nav-label">Seni</span>
             </a>
-            <a href="#pariwisata" class="nav-item">
+            <a href="#wisata" class="nav-item" onclick="window.location.href='#wisata'">
                 <span class="nav-icon">🗺️</span>
                 <span class="nav-label">Wisata</span>
             </a>
-            <a href="#kuliner" class="nav-item">
+            <a href="#kuliner" class="nav-item" onclick="window.location.href='#kuliner'">
                 <span class="nav-icon">🍲</span>
                 <span class="nav-label">Kuliner</span>
             </a>
-            <a href="#kontak" class="nav-item">
+            <a href="#kontak" class="nav-item" onclick="window.location.href='#kontak'">
                 <span class="nav-icon">📞</span>
                 <span class="nav-label">Kontak</span>
             </a>
