@@ -83,7 +83,7 @@ body {
 }
 
 /* ============================================= opening ============================================================ */
-/* .intro-screen {
+.intro-screen {
     position: fixed;
     top: 0;
     left: 0;
@@ -206,7 +206,7 @@ body.tirai-gone .intro-screen {
     to {
         opacity: 0.08;
     }
-} */
+}
 
 /* ============================================== opening end ======================================================== */
 /* Hero Section (Setelah Intro Screen) */
